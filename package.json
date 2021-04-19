@@ -1,0 +1,49 @@
+{
+	"name": "website",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start-dev": "next dev",
+		"build": "next build",
+		"migration:generate": "npm run typeorm migration:generate -- -n AutoMigration",
+		"migration:apply": "npm run typeorm migration:run",
+		"typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+	},
+	"dependencies": {
+		"@date-io/date-fns": "^1.3.13",
+		"@material-ui/core": "^4.11.0",
+		"@material-ui/icons": "^4.9.1",
+		"@material-ui/lab": "^4.0.0-alpha.57",
+		"@material-ui/pickers": "^3.3.10",
+		"@rjsf/core": "^2.3.0",
+		"@rjsf/material-ui": "^2.3.0",
+		"@types/dotenv": "^8.2.0",
+		"@types/uuid": "^8.3.0",
+		"date-fns": "^2.19.0",
+		"fontsource-roboto": "^4.0.0",
+		"isomorphic-unfetch": "^3.1.0",
+		"mysql2": "^2.1.0",
+		"next": "^9.5.2",
+		"pg": "^8.5.1",
+		"react": "^16.13.1",
+		"react-alert": "^7.0.2",
+		"react-alert-template-basic": "^1.0.0",
+		"react-alert-template-mui": "^1.0.7",
+		"react-dom": "^16.14.0",
+		"reflect-metadata": "^0.1.10",
+		"typeorm": "^0.2.24",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-class-properties": "^7.10.4",
+		"@babel/plugin-proposal-decorators": "^7.10.5",
+		"@types/node": "^8.0.29",
+		"@types/react": "^16.9.46",
+		"@types/react-alert": "^5.2.0",
+		"babel-plugin-transform-typescript-metadata": "^0.3.0",
+		"dotenv": "^8.2.0",
+		"ts-node": "^3.3.0",
+		"tsconfig-paths": "^3.9.0",
+		"typescript": "3.3.3333"
+	}
+}

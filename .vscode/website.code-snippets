@@ -1,0 +1,39 @@
+{
+	"Entity": {
+		"scope": "javascript,typescript",
+		"prefix": "entity",
+		"body": [
+			"import { Column, Entity, PrimaryGeneratedColumn } from \"typeorm\";",
+			"",
+			"@Entity()",
+			"export default class $1 {",
+			"\t@PrimaryGeneratedColumn(\"uuid\")",
+			"\tid: number;",
+			"}",
+		],
+		"description": "Creates an Entity"
+	},
+
+	"API": {
+		"scope": "javascript,typescript",
+		"prefix": "api",
+		"body": [
+			"import { NextApiRequest, NextApiResponse } from \"next\";",
+			"",
+			"export type Api$1Request =  { };",
+			"",
+			"export type Api$1Response = {",
+			"\tsuccess: boolean;",
+			"};",
+			"",
+			"export default async (req: NextApiRequest & Api$1Request, res: NextApiResponse<Api$1Response>) => {",
+			"\t$0res",
+			"\t\t.status(200)",
+			"\t\t.json({",
+			"\t\t\tsuccess: false,",
+			"\t\t});",
+			"};"
+		],
+		"description": "Creates an API"
+	}
+}
