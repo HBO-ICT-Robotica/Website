@@ -6,7 +6,7 @@ const Theme = createMuiTheme({
     type: "light",
 
     primary: {
-      main: blue[500],
+      main: blue[900],
     },
     secondary: {
       main: blue[700],
