@@ -93,7 +93,7 @@ export default function ButtonAppBar() {
 	  <Box mt="3vh"/>
 	  <Container maxWidth="xl">
 	  <Grid container className={classes.body} spacing={4} justify="center" alignItems="stretch">
-	  <Grid item xs={4}>
+	  <Grid item xs={12} md={4}>
 	  <Card className={classes.card}>
         <CardMedia
           component="img"
@@ -117,7 +117,7 @@ export default function ButtonAppBar() {
         </CardContent>
     </Card>
     </Grid>
-	<Grid item xs={4}>
+	<Grid item xs={12} md={4}>
 	  <Card className={classes.card}>
         <CardMedia
           component="img"
@@ -151,7 +151,7 @@ export default function ButtonAppBar() {
         </CardContent>
     </Card>
     </Grid>
-	<Grid item xs={4}>
+	<Grid item xs={12} md={4}>
 	  <Card className={classes.card}>
         <CardMedia
           component="img"
