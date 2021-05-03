@@ -15,6 +15,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import { Box, Divider } from '@material-ui/core';
 import { useRouter } from 'next/router';
+import Header from '../components/header';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -103,29 +104,7 @@ export default function ScrollableTabsButtonAuto() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} onClick={handleClick} color="inherit" aria-controls="simple-menu" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            Game Changers
-          </Typography>
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            <MenuItem onClick={handleHome}>Home</MenuItem>
-            <MenuItem onClick={handleProgress}>Voortgang</MenuItem>
-            <MenuItem onClick={handleClose} disabled>Livestream</MenuItem>
-            <Divider/>
-            <MenuItem onClick={handleMorphologicView}>Morfologisch Overzicht</MenuItem>
-          </Menu>
-        </Toolbar>
-      </AppBar>
+      <Header></Header>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
