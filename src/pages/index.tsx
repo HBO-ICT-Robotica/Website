@@ -5,19 +5,16 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import { Box, Container, Grid } from '@material-ui/core';
+import { Box, Container, Divider, Grid } from '@material-ui/core';
 import BatteryChargingFullIcon from '@material-ui/icons/BatteryChargingFull';
 import ComputerIcon from '@material-ui/icons/Computer';
 import BuildIcon from '@material-ui/icons/Build';
 import { useRouter } from 'next/router';
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,6 +57,11 @@ export default function ButtonAppBar() {
     router.push("/");
   };
 
+	const handleMorphologicView = () => {
+    setAnchorEl(null);
+    router.push("/docs/morphologicView");
+  };
+
   const handleClose = () => {
     setAnchorEl(null);
   }
@@ -75,7 +77,6 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             Game Changers
           </Typography>
-          <Button color="inherit"><AccountCircleIcon/></Button>
 		  <Menu
         id="simple-menu"
         anchorEl={anchorEl}
@@ -85,7 +86,9 @@ export default function ButtonAppBar() {
       >
         <MenuItem onClick={handleHome}>Home</MenuItem>
         <MenuItem onClick={handleProgress}>Voortgang</MenuItem>
-        <MenuItem onClick={handleClose}>Livestream</MenuItem>
+        <MenuItem onClick={handleClose} disabled>Livestream</MenuItem>
+				<Divider/>
+        <MenuItem onClick={handleMorphologicView}>Morfologisch Overzicht</MenuItem>
       </Menu>
         </Toolbar>
       </AppBar>
