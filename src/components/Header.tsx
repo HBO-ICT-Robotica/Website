@@ -55,7 +55,7 @@ export default function Header() {
 					</IconButton>
 
 					<Typography variant="h6" className={classes.title}>
-						Game Changers
+						Test
 					</Typography>
 					
 					<Menu
