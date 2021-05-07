@@ -16,10 +16,16 @@ jobs:
 
     steps:
       - name: executing remote ssh commands using ssh key
-      - uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: keyslam.nl
           username: ballboi
           password: winnaars
           port: 8192
           script: whoami
+          
+      - name: show job status
+        if: always()
+        run: echo $status
+        env:
+         status: ${{job.status}}
