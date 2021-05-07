@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@material-ui/core';
+import { Box, Grid, Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from '@material-ui/core';
+import Header from '../../components/Header';
 
 const useStyles = makeStyles({
 	table: {
@@ -190,6 +191,8 @@ export default function MorphologicView() {
 
 	return (
 		<>
+			<Header/>
+
 			<Grid container direction="row" justify="center" alignItems="center">
 				<Grid item xs={12}>
 					<Box margin={2}/>
