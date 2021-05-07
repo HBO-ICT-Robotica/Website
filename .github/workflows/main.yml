@@ -1,0 +1,25 @@
+name: Deploy to Ballboi.nl
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x, 15.x]
+
+    steps:
+      - name: executing remote ssh commands using ssh key
+      - uses: appleboy/ssh-action@master
+        with:
+          host: keyslam.nl
+          username: ballboi
+          password: winnaars
+          port: 8192
+          script: whoami
