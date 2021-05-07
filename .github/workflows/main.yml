@@ -18,7 +18,12 @@ jobs:
           username: ballboi
           password: winnaars
           port: 8192
-          script: whoami
+          script: |
+            cd /var/www/html/ballboi
+            git pull
+            npm install
+            npm run-script build
+            pm2 restart Ballboi
           
       - name: show job status
         if: always()
