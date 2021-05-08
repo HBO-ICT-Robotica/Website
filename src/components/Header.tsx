@@ -29,7 +29,7 @@ export default function Header() {
 
 	const handleProgress = () => {
 		setAnchorEl(null);
-		router.push("progress");
+		router.push("/progress");
 	};
 
 	const handleHome = () => {
