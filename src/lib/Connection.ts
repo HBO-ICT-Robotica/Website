@@ -1,4 +1,5 @@
 import { Connection, ConnectionOptions, createConnection, getConnection } from "typeorm";
+import Telemetry from "../entities/Telemetry.entity";
 
 const connectionOptions: ConnectionOptions = {
 	type: "mysql",
@@ -9,10 +10,10 @@ const connectionOptions: ConnectionOptions = {
 	database: process.env.DB_DATABASE,
 
 	synchronize: false,
-	logging: true,
+	logging: false,
 
 	entities: [
-		"dist/entities/*.entity{.js,.ts}"
+		Telemetry
 	]
 };
 

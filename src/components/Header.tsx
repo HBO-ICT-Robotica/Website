@@ -27,14 +27,19 @@ export default function Header() {
 		setAnchorEl(event.currentTarget);
 	};
 
+	const handleHome = () => {
+		setAnchorEl(null);
+		router.push("/");
+	};
+
 	const handleProgress = () => {
 		setAnchorEl(null);
 		router.push("/progress");
 	};
 
-	const handleHome = () => {
+	const handleLivestream = () => {
 		setAnchorEl(null);
-		router.push("/");
+		router.push("/livestream");
 	};
 
 	const handleMorphologicView = () => {
@@ -67,7 +72,7 @@ export default function Header() {
 					>
 						<MenuItem onClick={handleHome}>Home</MenuItem>
 						<MenuItem onClick={handleProgress}>Voortgang</MenuItem>
-						<MenuItem onClick={handleClose} disabled>Livestream</MenuItem>
+						<MenuItem onClick={handleLivestream}>Livestream</MenuItem>
 						<Divider />
 						<MenuItem onClick={handleMorphologicView}>Morfologisch Overzicht</MenuItem>
 					</Menu>
