@@ -24,7 +24,7 @@ export default function LiveStream() {
 		const timer = setInterval(() => {
 			fetchData();
 			console.log("refreshed");
-		}, 1000 / 12);
+		}, 1000 / 24);
 
 		return () => {
 			clearInterval(timer);

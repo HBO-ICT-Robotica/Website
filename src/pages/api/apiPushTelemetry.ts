@@ -16,7 +16,7 @@ export default async function apiPushTelemetry(req: NextApiRequest & apiPushTele
 	const connection = await awaitConnection();
 
 	const now = new Date();
-	const filename = dateFormat(now, "'stream'_dd-mm-yyyy_HH-MM-ss");
+	const filename = dateFormat(now, "'stream'_dd-mm-yyyy_HH-MM-ss-l");
 
 	const imageData = "data:image/png;base64," + req.body.image;
 
