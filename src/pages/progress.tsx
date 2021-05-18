@@ -78,6 +78,7 @@ export default function ScrollableTabsButtonAuto() {
 				>
 					<Tab label="Week 1" {...a11yProps(0)} />
 					<Tab label="Week 2" {...a11yProps(1)} />
+					<Tab label="Week 3/4" {...a11yProps(2)} />
 				</Tabs>
 			</AppBar>
 			<Container maxWidth="xl">
@@ -211,6 +212,61 @@ export default function ScrollableTabsButtonAuto() {
 							gaat worden. Hier moest bijvoorbeeld een scherm op worden gemonteerd waarop data weergeven kan worden
 							zoals sensordata of batterijduur. Ook zijn ze druk geweest met het maken van de controler vanuit waar alle componenten
 							van de robot aangestuurd moeten worden.
+						</Typography>
+							</CardContent>
+						</Card>
+					</TabPanel>
+					<TabPanel value={tabIndex} index={2}>
+						<Card>
+							<CardMedia
+								component="img"
+								alt="WTB"
+								image="ETWTB1.png"
+								title="ControllerPoot"
+								width="auto"
+								height="250vh"
+								border-color="black"
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+									Watersnijder, buigen en monteren
+						</Typography>
+								<Typography variant="body2" color="textSecondary" component="p">
+									Er zijn in week 3 ontwerpen gemaakt van de poten en de body van onze robot.
+									Deze zijn in week drie met de watersnijder uit aluminium gesneden om vervolgens
+									gebogen te worden in de juiste vorm.
+									De losse onderdelen van de grijper zijn ook uitgesneden en in elkaar gemonteerd om
+									tot de grijper te komen.
+									ICT heeft een livestream opgezet die op het scherm bij de wedstrijd en op deze website live 
+									kan streamen. Deze hopen zij binnenkort al kunnen in te schakelen.
+									Daarnaast is de aansturing van de servo's en motoren succesvol getest.
+						</Typography>
+							</CardContent>
+						</Card>
+
+						<Box mt="3vh" />
+
+						<Card>
+							<CardMedia
+								component="img"
+								alt="WTB"
+								image="WTB1.png"
+								title="BodyGrijper"
+								width="auto"
+								height="250vh"
+								border-color="black"
+							/>
+							<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+									Monteren servo's en body robot
+						</Typography>
+								<Typography variant="body2" color="textSecondary" component="p">
+									Elektrotechniek is nog altijd druk bezig geweest met het in elkaar zetten van de 
+									afstandsbediening. Zo hebben zij de display werkend gekregen en zijn zij druk bezig
+									met de controller die de servo's en motoren moet gaan aansturen.
+									De body van de robot is ook uitgesneden en de servo's zijn daarop gemonteerd.
+									Alles was goed uitgemeten dus het paste allemaal precies op elkaar waardoor we
+									een basis voor de body van de robot hebben waarmee we verder kunnen werken
 						</Typography>
 							</CardContent>
 						</Card>
