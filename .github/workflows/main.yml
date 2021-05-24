@@ -22,6 +22,8 @@ jobs:
             cd /var/www/html/ballboi
             git pull
             npm install
+            npm run-script migration:generate
+            npm run-script migration:apply
             npm run-script build
             pm2 restart Ballboi
           
