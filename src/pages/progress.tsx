@@ -166,7 +166,7 @@ export default function ScrollableTabsButtonAuto() {
 					<Grid item xs={12} md={9}>
 						<TabPanel value={tabIndex} index={0}>
 							<Card>
-								<Carousel animation="slide" interval={3000} navButtonsAlwaysVisible timeout={500} autoPlay>
+								<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
 									<CarouselImage key={1} src="progress/week1/rupsbanden.png" />
 									<CarouselImage key={2} src="progress/week1/poten.png" />
 									<CarouselImage key={3} src="progress/week1/rupsbanden_op_poten.png" />
@@ -200,7 +200,7 @@ export default function ScrollableTabsButtonAuto() {
 							<Box mt="3vh" />
 
 							<Card>
-								<Carousel animation="slide" interval={3000} navButtonsAlwaysVisible timeout={500} autoPlay>
+								<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
 									<CarouselImage key={1} src="progress/week1/tennibot.png" />
 									<CarouselImage key={2} src="progress/week1/ballboy.png" />
 									<CarouselImage key={3} src="progress/week1/grijper.png" />
@@ -233,7 +233,7 @@ export default function ScrollableTabsButtonAuto() {
 
 						<TabPanel value={tabIndex} index={1}>
 							<Card>
-								<Carousel animation="slide" interval={3000} navButtonsAlwaysVisible timeout={500} autoPlay>
+								<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
 									<CarouselImage key={1} src="progress/week2/elt_functies.png" />
 									<CarouselImage key={2} src="progress/week2/presentatie.png" />
 									<CarouselImage key={3} src="progress/week2/robot.png" />
@@ -256,7 +256,7 @@ export default function ScrollableTabsButtonAuto() {
 							<Box mt="3vh" />
 
 							<Card>
-								<Carousel animation="slide" interval={3000} navButtonsAlwaysVisible timeout={500} autoPlay>
+								<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
 									<CarouselImage key={1} src="progress/week2/3d_prints.png" />
 									<CarouselImage key={2} src="progress/week2/motoren.png" />
 									<CarouselImage key={3} src="progress/week2/display.png" />
@@ -285,7 +285,7 @@ export default function ScrollableTabsButtonAuto() {
 						</TabPanel>
 						<TabPanel value={tabIndex} index={2}>
 							<Card>
-								<Carousel animation="slide" interval={3000} navButtonsAlwaysVisible timeout={500} autoPlay>
+								<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
 									<CarouselImage key={1} src="progress/week3/buigen.png" />
 									<CarouselImage key={2} src="progress/week3/poot.png" />
 									<CarouselImage key={3} src="progress/week3/controller.png" />
@@ -310,7 +310,7 @@ export default function ScrollableTabsButtonAuto() {
 							<Box mt="3vh" />
 
 							<Card>
-								<Carousel animation="slide" interval={3000} navButtonsAlwaysVisible timeout={500} autoPlay>
+								<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
 									<CarouselImage key={1} src="progress/week3/servos.png" />
 									<CarouselImage key={2} src="progress/week3/body.png" />
 									<CarouselImage key={3} src="progress/week3/grijper.png" />
