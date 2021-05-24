@@ -53,7 +53,7 @@ export default function About() {
 							title="Groepsfoto"
 						/>
 					</Box>
-					
+
 					<Box mt="1vh" />
 
 					<Grid container spacing={2} justify="center" alignItems="stretch">
@@ -138,7 +138,16 @@ export default function About() {
 						<Grid item xs={12} sm={6} md={4}>
 							<AboutCard discipline="ICT" name="Maren de Vries">
 								<Typography variant="body2" color="textSecondary" component="p">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit illo perspiciatis quis incidunt est adipisci dignissimos eius commodi molestiae ullam fuga enim tenetur nemo, eaque, fugiat perferendis deleniti temporibus minima?
+									Hoi!
+									<br/>
+									<br/>
+									Mijn naam is Maren. Ik ben 26 jaar oud en volg de HBO-ICT opleiding.
+									<br/>
+									<br/>
+									In mijn vrije tijd ben ik meestal te vinden op de paardenfokkerij van mijn moeder om de jonge paarden te trainen. Ook ben ik regelmatig te vinden in de garage, waar ik aan mijn auto aan het sleutelen ben of in de keuken waar ik werk als kok.
+									<br/>
+									<br/>
+									Ik ben ontzettend benieuwd hoe de wedstrijd zal verlopen met onze robot!
 								</Typography>
 							</AboutCard>
 						</Grid>
