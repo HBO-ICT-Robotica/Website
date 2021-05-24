@@ -1,8 +1,11 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import { Toolbar, IconButton, Typography, Menu, MenuItem, Divider, makeStyles } from '@material-ui/core';
-import router from 'next/router';
+import { useRouter } from 'next/router';
 import MenuIcon from '@material-ui/icons/Menu';
+import { darkTheme, lightTheme} from '../theme';
+import { NightsStay, WbSunny } from '@material-ui/icons';
+import useTheme from '../theme';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -22,9 +25,21 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
 	const classes = useStyles();
 	const [anchorEl, setAnchorEl] = React.useState(null);
+	const router = useRouter();
+
+	const [theme, setTheme] = useTheme();
 
 	const handleClick = (event) => {
 		setAnchorEl(event.currentTarget);
+	};
+
+	const handleThemeToggle = (event) => {
+		if (theme == lightTheme) {
+			setTheme("dark");
+		} else if (theme == darkTheme) {
+			setTheme("light");
+		}
+		router.reload();
 	};
 
 	const handleProgress = () => {
@@ -41,6 +56,11 @@ export default function Header() {
 		setAnchorEl(null);
 		router.push("/docs/morphologicView");
 	};
+
+	const handleAbout = () => {
+		setAnchorEl(null);
+		router.push("/about");
+	}
 
 	const handleClose = () => {
 		setAnchorEl(null);
@@ -67,10 +87,15 @@ export default function Header() {
 					>
 						<MenuItem onClick={handleHome}>Home</MenuItem>
 						<MenuItem onClick={handleProgress}>Voortgang</MenuItem>
+						<MenuItem onClick={handleAbout}>Over ons</MenuItem>
 						<MenuItem onClick={handleClose} disabled>Livestream</MenuItem>
 						<Divider />
 						<MenuItem onClick={handleMorphologicView}>Morfologisch Overzicht</MenuItem>
 					</Menu>
+
+					<IconButton edge="end" className={classes.menuButton} onClick={handleThemeToggle} color="inherit">
+						{theme === lightTheme ? <WbSunny /> : <NightsStay/>}
+					</IconButton>
 				</Toolbar>
 			</AppBar>
 		</>

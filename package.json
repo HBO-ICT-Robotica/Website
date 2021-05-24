@@ -31,6 +31,7 @@
 		"react-alert-template-basic": "^1.0.0",
 		"react-alert-template-mui": "^1.0.7",
 		"react-dom": "^16.14.0",
+		"react-material-ui-carousel": "^2.2.6",
 		"reflect-metadata": "^0.1.10",
 		"typeorm": "^0.2.24",
 		"uuid": "^8.3.2"

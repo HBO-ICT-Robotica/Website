@@ -1,4 +1,5 @@
 import { Connection, ConnectionOptions, createConnection, getConnection } from "typeorm";
+import Comment from "../entities/Comment.entity";
 
 const connectionOptions: ConnectionOptions = {
 	type: "mysql",
@@ -12,7 +13,7 @@ const connectionOptions: ConnectionOptions = {
 	logging: true,
 
 	entities: [
-		"dist/entities/*.entity{.js,.ts}"
+		Comment,
 	]
 };
 
