@@ -48,7 +48,7 @@ export default function About() {
 					<Box display={{ xs: 'none', md: 'block' }}>
 						<img
 							className={classes.groupPictureBanner}
-							src="GroepsFotoBanner.png"
+							src="groepsFotoBanner.png"
 							alt="Groepsfoto"
 							title="Groepsfoto"
 						/>
