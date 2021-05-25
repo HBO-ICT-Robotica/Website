@@ -152,7 +152,7 @@ export default function ScrollableTabsButtonAuto() {
 					<Tab label="Week 1" {...a11yProps(0)} />
 					<Tab label="Week 2" {...a11yProps(1)} />
 					<Tab label="Week 3/4" {...a11yProps(2)} />
-					<Tab label="Week 5" disabled {...a11yProps(3)} />
+					<Tab label="Week 5" {...a11yProps(3)} />
 					<Tab label="Week 6" disabled {...a11yProps(4)} />
 					<Tab label="Week 7" disabled {...a11yProps(5)} />
 					<Tab label="Week 8" disabled {...a11yProps(6)} />
@@ -332,11 +332,103 @@ export default function ScrollableTabsButtonAuto() {
 						</TabPanel>
 						<TabPanel value={tabIndex} index={3}>
 							<Card>
+							<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
+									<CarouselImage key={1} src="progress/week5/EltContDisplay.jpg" />
+									<CarouselImage key={2} src="progress/week5/Display.jpg" />
+									<CarouselImage key={3} src="progress/week5/PrintplaatjeElt.jpg" />
+									<CarouselImage key={4} src="progress/week5/LoadCell.jpg" />
+								</Carousel>
 								<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+										Aansturen servo's met afstandsbediening
+									</Typography>
 									<Typography variant="body2" component="p">
-										<a href="https://youtu.be/MiNlz9BbVCo" target="_blank">Video Robot dans</a>
-										<br />
-										<a href="https://youtu.be/WYERC3SgBn4" target="_blank">Video Robot afstandsbesturing</a>
+									In week 5 is er gewerkt aan het werkend maken van de communicatie tussen de robot
+									en de afstandsbediening.
+									Hiervoor is een printplaatje ontworpen die nodig is om de servo's afzonderlijk
+									aan te kunnen sturen.
+									<br/>
+									<br/>
+									Er is ook uitgezocht wat er allemaal nodig is om de Loadcell waarmee wij het gewicht
+									willen gaan meten, uit te kunnen lezen.
+									Doordat de waarden die de loadcell uitleest erg minimaal zijn, is het de bedoeling dat er 
+									een amplifier/versterker tussen komt die het vervolgens naar de Arduino communiceert.
+									Uiteindelijk is het ook gelukt om de servo's daadwerkelijk individueel aan te kunnen sturen
+									met de joysticks van de afstandsbediening.
+									<br/>
+									<br/>
+									Dit zag er als volgt uit:
+									<br/>
+									<br/>
+									</Typography>
+									<Grid container justify="center">
+										<Grid item>
+									<iframe width="420" height="315"
+									src="https://www.youtube.com/embed/WYERC3SgBn4">
+									</iframe>
+									</Grid>
+									</Grid>
+								</CardContent>
+							</Card>
+
+							<Box mt="3vh" />
+
+							<Card>
+							<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
+									<CarouselImage key={1} src="progress/week5/OntwerpRobot.jpg" />
+									<CarouselImage key={2} src="progress/week5/PotenGrijper.jpg" />
+								</Carousel>
+								<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+										Watersnijden en buigen tweede ontwerp poten en grijper.
+									</Typography>
+									<Typography variant="body2" component="p">
+										WTB is bezig geweest om een nieuw ontwerp te maken van hoe de robot uiteindelijk 
+										er uit komt te zien. Er was nog wat discussie over de kleur maar daar gaan we 
+										op een later moment over verder discussiëren. 
+										<br/>
+										<br/>
+										Er waren nog wat aanpassingen voor de poten nodig. Zo sloten ze nog niet helemaal
+										goed aan op de servo's dus zijn de afmetingen voor de aansluiting aangepast.
+										Daarnaast zijn er ook extra gaten in de robot gesneden om de poten lichter te maken.
+										Het is namelijk sowieso de uitdaging om de robot zo licht mogelijk te maken maar het is 
+										voor ons ook noodzakelijk zodat de servo's niet overbelast worden.
+										Er zijn ook aanpassingen gemaakt aan de grijper door er afstandsbusjes voor de 3d-printen
+										voor een steviger geheel. De grijper zelf is ook in elkaar gemonteerd om hem uiteindelijk 
+										te kunnen testen.  Verder is WTB ook nog bezig geweest met de arm voor de grijper zoals
+										berekeningen, afmetingen en ontwerp. 
+									</Typography>
+								</CardContent>
+							</Card>
+
+							<Box mt="3vh" />
+							
+							<Card>
+							<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
+									<CarouselImage key={1} src="progress/week5/RobotAssembly.jpg" />
+									<CarouselImage key={2} src="progress/week5/TrapRobot.jpg" />
+									<CarouselImage key={2} src="progress/week5/OverbruggenRobot.jpg" />
+								</Carousel>
+								<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+										Assembleren wielen, poten en body en eerste testen
+									</Typography>
+									<Typography variant="body2" component="p">
+										Deze week zijn ook de wielen binnengekomen, wij wilden eigenlijk zo snel mogelijk
+										de robot al in elkaar zetten voor zover dat kon.
+										Er zijn onderdelen met de 3d printer geprint waarmee de poten, servo's en wielen 
+										aan elkaar gemonteerd konden worden.
+										Deze zijn voor nu alleen bedoeld om te testen omdat deze zeer waarschijnlijk van
+										een steviger materiaal zoals aluminium gemaakt moeten worden.
+										<br/>
+										<br/>
+										Nadat de robot in elkaar was gezet, konden wij alvast gaan kijken hoe het
+										ongeveer ging met de trap op komen. Zo konden wij checken of de wielen bijvoorbeeld
+										groot genoeg waren en de robot goed overeind kon blijven staan.
+										Ook hebben we gekeken of de robot zich lang genoeg kon uitstrekken om het gat te overbruggen.
+										Er bleek dat er nog wel wat kleine aanpassingen in de poten nodig waren maar verder liepen wij
+										bij deze eerste tests niet tegen grote problemen aan.
+				
 									</Typography>
 								</CardContent>
 							</Card>
