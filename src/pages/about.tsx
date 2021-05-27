@@ -60,7 +60,11 @@ export default function About() {
 						<Grid item xs={12} sm={6} md={4}>
 							<AboutCard discipline="WTB" name="Annika Visser">
 								<Typography variant="body2" color="textSecondary" component="p">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit illo perspiciatis quis incidunt est adipisci dignissimos eius commodi molestiae ullam fuga enim tenetur nemo, eaque, fugiat perferendis deleniti temporibus minima?
+								Hallo, ik ben Annika. Ik ben 19 jaar oud en ik studeer werktuigbouwkunde aan de NHL Stenden.
+								<br/><br/>
+								in mijn vrije tijd Korfbal ik graag (dat heb ik jammer genoeg sinds het begin van Corona niet meer kunnen), ook houdt ik van lezen en gamen.
+								<br/><br/>
+								Ik heb nu al heel veel geleerd tijdens dit project en ik ben ontzettend benieuwd hoe onze robot het bij de race gaat doen.
 								</Typography>
 							</AboutCard>
 						</Grid>
@@ -168,7 +172,9 @@ export default function About() {
 						<Grid item xs={12} sm={6} md={4}>
 							<AboutCard discipline="ELT" name="Boas Prins">
 								<Typography variant="body2" color="textSecondary" component="p">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit illo perspiciatis quis incidunt est adipisci dignissimos eius commodi molestiae ullam fuga enim tenetur nemo, eaque, fugiat perferendis deleniti temporibus minima?
+									Hey, ik ben Boas. Ik ben 19 jaar en studeer HBO Elektrotechniek. 
+									<br/><br/>
+									In mijn vrije tijd maak ik muziek en doe ik aan programmeren. Daarnaast hou ik van sporten en gamen.
 								</Typography>
 							</AboutCard>
 						</Grid>
