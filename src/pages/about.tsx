@@ -39,7 +39,7 @@ export default function About() {
 					<Box display={{ xs: 'block', md: 'none' }}>
 						<img
 							className={classes.groupPictureBanner}
-							src="Groepsfoto.jpeg"
+							src="groep.png"
 							alt="Groepsfoto"
 							title="Groepsfoto"
 						/>
@@ -117,7 +117,9 @@ export default function About() {
 						<Grid item xs={12} sm={6} md={4}>
 							<AboutCard discipline="ICT" name="Nyk Stobbe">
 								<Typography variant="body2" color="textSecondary" component="p">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit illo perspiciatis quis incidunt est adipisci dignissimos eius commodi molestiae ullam fuga enim tenetur nemo, eaque, fugiat perferendis deleniti temporibus minima?
+									Mijn naam is Nyk, ik ben 18 jaar en een tweedejaars HBO-ICT student.
+									<br/><br/>
+									In mijn vrije tijd ben ik graag technisch bezig, aan het programmeren of bezig met mijn 3D printer. Het allerliefst ben ik met de boot op het water.
 								</Typography>
 							</AboutCard>
 						</Grid>
