@@ -153,9 +153,10 @@ export default function ScrollableTabsButtonAuto() {
 					<Tab label="Week 2" {...a11yProps(1)} />
 					<Tab label="Week 3/4" {...a11yProps(2)} />
 					<Tab label="Week 5" {...a11yProps(3)} />
-					<Tab label="Week 6" disabled {...a11yProps(4)} />
-					<Tab label="Week 7" disabled {...a11yProps(5)} />
-					<Tab label="Week 8" disabled {...a11yProps(6)} />
+					<Tab label="Brandweer" {...a11yProps(4)} />
+					<Tab label="Week 6" disabled {...a11yProps(5)} />
+					<Tab label="Week 7" disabled {...a11yProps(6)} />
+					<Tab label="Week 8" disabled {...a11yProps(7)} />
 				</Tabs>
 			</AppBar>
 
@@ -436,9 +437,43 @@ export default function ScrollableTabsButtonAuto() {
 
 						<TabPanel value={tabIndex} index={4}>
 							<Card>
+							<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
+									<CarouselImage key={1} src="progress/brandweer/brandweer.png" />
+									<CarouselImage key={2} src="progress/brandweer/brandweerauto.png" />
+								</Carousel>
 								<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+										Paniek!
+									</Typography>
 									<Typography variant="body2" component="p">
+									Vandaag waren we zoals gewoonlijk weer lekker bezig met het bouwen van de robot, wanneer we plots Annika hoorden schreeuwen.
+									Toen we omgekeken zagen we een grote rook wolk uit haar laptop komen. Paniek dus.
+									<br/>
+									<br/>
+									Binnen enkele seconden waren ramen opengeslagen, stekkers uitgetrokken, iedereen buiten het lokaal met de deur goed dicht, en docenten ingeschakeld om ons te helpen.
+									Uiteraard konden we het lokaal niet meer in. De rook was te ruiken op de gangen, en dus is de brandweer ingeschakeld om er zeker van te zijn dat alles veilig is.
+									</Typography>
+								</CardContent>
+							</Card>
 
+							<Box mt="3vh" />
+
+							<Card>
+							<Carousel animation="slide" interval={5000} navButtonsAlwaysVisible timeout={500} autoPlay>
+									<CarouselImage key={1} src="progress/brandweer/laptop_bovenkant.png" />
+									<CarouselImage key={2} src="progress/brandweer/laptop_onderkant.png" />
+									<CarouselImage key={2} src="progress/brandweer/tafel.png" />
+								</Carousel>
+								<CardContent>
+								<Typography gutterBottom variant="h5" component="h2">
+										Aftermath
+									</Typography>
+									<Typography variant="body2" component="p">
+										Na enige tijd gaf de brandweer aan dat het veilig was en een paar minuten later mochten we het (stinkende) lokaal weer in.
+										<br/>
+										<br/>
+										Annika's laptop is helaas niet meer te redden. Ook heeft de tafel het niet overleefd.
+										Wijzelf zijn natuurlijk erg geschrokken, maar konden gelukkig er al snel grappen overmaken, en we zijn erg blij dat iedereen gezond en wel is.
 									</Typography>
 								</CardContent>
 							</Card>
@@ -455,6 +490,16 @@ export default function ScrollableTabsButtonAuto() {
 						</TabPanel>
 
 						<TabPanel value={tabIndex} index={6}>
+							<Card>
+								<CardContent>
+									<Typography variant="body2" component="p">
+
+									</Typography>
+								</CardContent>
+							</Card>
+						</TabPanel>
+
+						<TabPanel value={tabIndex} index={7}>
 							<Card>
 								<CardContent>
 									<Typography variant="body2" component="p">
