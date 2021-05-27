@@ -472,7 +472,7 @@ export default function ScrollableTabsButtonAuto() {
 										Na enige tijd gaf de brandweer aan dat het veilig was en een paar minuten later mochten we het (stinkende) lokaal weer in.
 										<br/>
 										<br/>
-										Annika's laptop is helaas niet meer te redden. Ook heeft de tafel het niet overleefd.
+										Annika's laptop is helaas niet meer te redden. Ook heeft de tafel er een flinke brandwond aan over gehouden.
 										Wijzelf zijn natuurlijk erg geschrokken, maar konden gelukkig er al snel grappen overmaken, en we zijn erg blij dat iedereen gezond en wel is.
 									</Typography>
 								</CardContent>
