@@ -1,5 +1,7 @@
 import { Connection, ConnectionOptions, createConnection, getConnection } from "typeorm";
 import Comment from "../entities/Comment.entity";
+import Telemetry from "../entities/Telemetry.entity";
+import TelemetrySession from "../entities/TelemetrySession.entity";
 
 const connectionOptions: ConnectionOptions = {
 	type: "mysql",
@@ -14,6 +16,9 @@ const connectionOptions: ConnectionOptions = {
 
 	entities: [
 		Comment,
+
+		Telemetry,
+		TelemetrySession,
 	]
 };
 
