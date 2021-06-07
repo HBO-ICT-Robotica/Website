@@ -62,6 +62,11 @@ export default function Header() {
 		router.push("/about");
 	}
 
+	const handleTelemerty = () => {
+		setAnchorEl(null);
+		router.push("/telemetry");
+	}
+
 	const handleClose = () => {
 		setAnchorEl(null);
 	}
@@ -89,6 +94,7 @@ export default function Header() {
 						<MenuItem onClick={handleProgress}>Voortgang</MenuItem>
 						<MenuItem onClick={handleAbout}>Over ons</MenuItem>
 						<MenuItem onClick={handleClose} disabled>Livestream</MenuItem>
+						<MenuItem onClick={handleTelemerty}>Telemetrie</MenuItem>
 						<Divider />
 						<MenuItem onClick={handleMorphologicView}>Morfologisch Overzicht</MenuItem>
 					</Menu>

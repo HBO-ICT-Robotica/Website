@@ -165,7 +165,7 @@ export default function About() {
 						<Grid item xs={12} sm={6} md={4}>
 							<AboutCard discipline="ELT" name="Laurens Veldjesgraaf">
 								<Typography variant="body2" color="textSecondary" component="p">
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit illo perspiciatis quis incidunt est adipisci dignissimos eius commodi molestiae ullam fuga enim tenetur nemo, eaque, fugiat perferendis deleniti temporibus minima?
+									Hoi, ik ben Laurens en ik studeer HBO Elektrotechniek.
 								</Typography>
 							</AboutCard>
 						</Grid>

@@ -156,7 +156,7 @@ export default function Index() {
 
 										<TextWithIcon icon={<BatteryChargingFullIcon />} text="Elektrotechniek" />
 										<Typography variant="body2" color="textSecondary" component="p">
-											Boas en Laurence
+											Boas en Laurens
 										</Typography>
 
 										<br></br>
