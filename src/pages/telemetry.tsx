@@ -1,23 +1,53 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from '../components/Header';
 import Typography from '@material-ui/core/Typography';
-import { Box, Card,CardHeader, CardContent, CardMedia, Container, Grid } from '@material-ui/core';
+import { Box, Card, CardHeader, CardContent, CardMedia, Container, Grid } from '@material-ui/core';
+import { apiGetLatestTelemetryRequest, apiGetLatestTelemetryResponse } from './api/apiGetLatestTelemetry'
+import unfetch from 'isomorphic-unfetch';
 
 const useStyles = makeStyles((theme) => ({
-	LivestreamPlaceholder: {
-		width: "100%",
-		height: "auto"
-	}
+    LivestreamPlaceholder: {
+        width: "100%",
+        height: "auto"
+    }
 }));
+
+const loadServoStatus = async () => {
+
+}
 
 export default function telemetry() {
     const classes = useStyles();
-    
-	return (
-		<>
+    const [data, setData] = useState<apiGetLatestTelemetryResponse>(undefined);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const requestBody: apiGetLatestTelemetryRequest = {
+
+            };
+
+            const res = await unfetch("/api/apiGetLatestTelemetry", {
+                method: "POST",
+                body: JSON.stringify(requestBody),
+            })
+
+            const response: apiGetLatestTelemetryResponse = await res.json();
+
+            if (!response.success) {
+                alert("laden van de servostatus mislukts");
+            } else {
+                setData(response);
+            }
+        }
+
+        fetchData();
+    }, []);
+
+    return (
+        <>
             <div>
-				<Header />
+                <Header />
 
                 <Box mt="3vh" />
 
@@ -28,13 +58,13 @@ export default function telemetry() {
                                 <CardContent>
                                     <Typography component="h2">
                                         Livestream
-                                    </Typography> 
-                                        <img
-                                            className={classes.LivestreamPlaceholder}
-                                            src="groepsFotoBanner.png"
-                                            alt="LivestreamPlaceholder"
-                                            title="LivestreamPlaceholder"
-                                        />
+                                    </Typography>
+                                    <img
+                                        className={classes.LivestreamPlaceholder}
+                                        src="groepsFotoBanner.png"
+                                        alt="LivestreamPlaceholder"
+                                        title="LivestreamPlaceholder"
+                                    />
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -48,7 +78,11 @@ export default function telemetry() {
                                 />
                                 <CardContent>
                                     <Typography>
-                                        Servo's
+                                        {data == undefined ?
+                                            <div>Data is loading</div> 
+                                        : 
+                                            <div>{JSON.stringify(data)}</div>
+                                        }
                                     </Typography>
                                 </CardContent>
                             </Card>
@@ -78,7 +112,7 @@ export default function telemetry() {
                                 />
                                 <CardContent>
                                     <Typography>
-                                       Batterij
+                                        Batterij
                                     </Typography>
                                 </CardContent>
                             </Card>
@@ -132,6 +166,6 @@ export default function telemetry() {
                 </Container>
             </div>
         </>
-	);
+    );
 
 }

@@ -6,6 +6,10 @@ const base64Img = require('base64-img');
 
 export type apiPushTelemetryRequest = {
 	image: string,
+	servos: Array<number>,
+	targetDegrees: Array<number>,
+	motors: Array<number>,
+	weight: Number
 };
 
 export type apiPushTelemetryResponse = {

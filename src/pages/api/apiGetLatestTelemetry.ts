@@ -8,7 +8,8 @@ export type apiGetLatestTelemetryRequest = {
 };
 
 export type apiGetLatestTelemetryResponse = {
-	imageUrl: string
+	imageUrl: string,
+	success: boolean
 }
 
 export default async function apiGetLatestTelemetry(req: NextApiRequest & apiGetLatestTelemetryRequest, res: NextApiResponse<apiGetLatestTelemetryResponse>) {
@@ -27,6 +28,7 @@ export default async function apiGetLatestTelemetry(req: NextApiRequest & apiGet
 	res
 		.status(200)
 		.json({
-			imageUrl: latestTelemetry.imageUrl
+			imageUrl: latestTelemetry.imageUrl,
+			success: true
 		});
 }

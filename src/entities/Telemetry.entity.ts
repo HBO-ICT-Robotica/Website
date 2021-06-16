@@ -12,6 +12,15 @@ export default class Telemetry {
 	@Column()
 	imageUrl: string;
 
+	@Column("float", { array: true })
+	servos: number[];
+
+	@Column("int", { array: true })
+	targetDegrees: number[];
+
+	@Column("float", { array: true })
+	motors: number[];
+
 	@CreateDateColumn()
 	createdDate: Date;
 }
