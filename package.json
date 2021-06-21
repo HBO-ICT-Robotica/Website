@@ -20,6 +20,7 @@
 		"@types/dateformat": "^3.0.1",
 		"@types/dotenv": "^8.2.0",
 		"@types/uuid": "^8.3.0",
+		"base64-img": "^1.0.4",
 		"date-fns": "^2.19.0",
 		"dateformat": "^4.5.1",
 		"fontsource-roboto": "^4.0.0",
